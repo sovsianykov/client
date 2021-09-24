@@ -19,13 +19,12 @@
     letter-spacing: .1rem;
     text-decoration: none;
     cursor: pointer;
-    caret-color: #b9b5ae;
+    color: #b9b5ae;
     font-weight: 400;
     transition: .3s ease-in;
     &_active, &:hover {
       font-size: 18px;
-      letter-spacing: .08rem;
-      color: #f6f6f6;
+      color: #ffffff;
       font-weight: 500;
     }
   }
