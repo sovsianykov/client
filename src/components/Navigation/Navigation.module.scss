@@ -1,0 +1,32 @@
+.navigation {
+  width: 800px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #fff;
+  position: absolute;
+  bottom: 10px;
+  right: 50px;
+  .navigationItem {
+
+    text-shadow: 0 0 10px #000;
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    cursor: pointer;
+    caret-color: #b9b5ae;
+    font-weight: 400;
+    transition: .3s ease-in-out;
+    &_active, &:hover {
+      font-size: 18px;
+      letter-spacing: .08rem;
+      caret-color: #bdbcbc;
+      font-weight: 500;
+    }
+  }
+}
