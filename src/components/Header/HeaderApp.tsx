@@ -6,7 +6,6 @@ import HeaderNav from "./HeaderNav";
 const HeaderApp:FunctionComponent = () => {
     return (
         <header className={styles.headerContainer}>
-             header
             <HeaderTools/>
             <HeaderNav/>
         </header>

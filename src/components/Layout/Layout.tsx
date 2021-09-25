@@ -1,15 +1,15 @@
 import React, {FunctionComponent, ReactNode} from 'react';
 import styles from "./Layout.module.scss"
+import TabIndicator from "../TabIndicator/TabIndicator";
 
-interface LayoutProps {
-    children:ReactNode
-}
+
 
 
 const Layout:FunctionComponent  = ({children}) => {
     return (
         <div className={styles.layoutContainer}>
             {children}
+            <TabIndicator/>
         </div>
     );
 };

@@ -9,7 +9,6 @@ const Navigation: FunctionComponent = () => {
   const onClickHandler = (id: number) => {
     setActiveID(id);
   };
-  console.log(activeId)
   return (
     <div className={styles.navigation}>
       {navLinks.map((item:NavigationLink) => (

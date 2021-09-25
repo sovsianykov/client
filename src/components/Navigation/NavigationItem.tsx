@@ -3,7 +3,6 @@ import styles from './Navigation.module.scss'
 import {NavigationLink} from "../../content/links";
 import cn from 'classnames'
 import { Link } from "react-router-dom"
-import DroopDown from "../../shared/components/Droopdown/Droopdown";
 
 interface NavigationItemProps {
     item : NavigationLink;

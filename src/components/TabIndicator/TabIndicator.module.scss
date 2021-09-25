@@ -1,0 +1,23 @@
+.tabIndicator {
+  width: 800px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 50px ;
+
+
+
+
+  .tabIndicatorItem {
+    background: #000000;
+    transition: .3s ease-in;
+    width: 100px;
+    height: 20px;
+    opacity: 0;
+
+    &_active, &:hover {
+       opacity: 1;
+    }
+  }
+}
