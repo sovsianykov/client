@@ -8,6 +8,11 @@
   position: absolute;
   bottom: 10px;
   right: 50px;
+  z-index: 10;
+
+
+
+
   .navigationItem {
 
     text-shadow: 0 0 10px #000;
@@ -19,9 +24,13 @@
     letter-spacing: .1rem;
     text-decoration: none;
     cursor: pointer;
-    color: #b9b5ae;
-    font-weight: 400;
+    color: #f5c057;
+    font-weight: 500;
     transition: .3s ease-in;
+    a {
+      text-decoration: none;
+
+    }
     &_active, &:hover {
       font-size: 18px;
       color: #ffffff;
