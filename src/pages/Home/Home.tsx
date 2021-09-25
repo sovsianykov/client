@@ -1,16 +1,13 @@
 import React, {FunctionComponent} from 'react';
 import HeaderApp from "../../components/Header/HeaderApp";
-import Button from "../../shared/components/Button/Button";
+import DroopDown from "../../shared/components/Droopdown/Droopdown";
 
 
 
 const Home:FunctionComponent = () => {
-
     return (
         <div>
-            <Button onClick={() => console.log("its works")}>
-                Button
-            </Button>
+            <DroopDown/>
         </div>
     );
 };
