@@ -9,7 +9,6 @@ const Layout:FunctionComponent  = ({children}) => {
     return (
         <div className={styles.layoutContainer}>
             {children}
-            <TabIndicator/>
         </div>
     );
 };

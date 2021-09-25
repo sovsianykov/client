@@ -3,6 +3,7 @@ import NavigationItem from "./NavigationItem";
 import {NavigationLink, navLinks} from "../../content/links";
 import styles from "./Navigation.module.scss";
 import DroopDown from "../../shared/components/Droopdown/Droopdown";
+import TabIndicator from "../TabIndicator/TabIndicator";
 
 const Navigation: FunctionComponent = () => {
   const [activeId, setActiveID] = useState<number>(1);
@@ -19,6 +20,7 @@ const Navigation: FunctionComponent = () => {
           item={item}
         />
       ))}
+      {/*<TabIndicator activeId={activeId}/>*/}
     </div>
   );
 };

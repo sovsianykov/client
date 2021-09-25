@@ -1,20 +1,21 @@
 import React, {FunctionComponent, useState} from 'react';
 import styles from './TabIndicator.module.scss';
 import {NavigationLink, navLinks} from "../../content/links";
-import NavigationItem from "../Navigation/NavigationItem";
 import TabIndicatorItem from "./TabIndicatorItem";
+interface TabIndicatorProps {
+    activeId : number
+}
 
-const TabIndicator:FunctionComponent = () => {
-    const [activeId, setActiveID] = useState<number>(1);
-    const onClickHandler = (id: number) => {
-        setActiveID(id);
-    };
+
+const TabIndicator:FunctionComponent<TabIndicatorProps> = (
+    {activeId}
+) => {
+
     return (
         <nav className={styles.tabIndicator}>
             {navLinks.map((item:NavigationLink) => (
-                <TabIndicatorItem id={item.id}
+                <TabIndicatorItem item = {item}
                     key={item.id}
-                    onClick={onClickHandler}
                     active={activeId === item.id}
                 />
             ))}
