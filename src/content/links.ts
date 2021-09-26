@@ -19,7 +19,13 @@ export  interface NavigationLink {
         ]
 
     },
-    { id:3, name : "Гитарные мастера", path: "/luthiers", hasDroopDown: true, isDroopDown : false,listDroopDown:[] },
+    { id:3, name : "Гитарные мастера", path: "/luthiers", hasDroopDown: true, isDroopDown : false,
+        listDroopDown:[
+            "Киев",
+            "Львов",
+            "Харьков",
+            "Одесса"
+        ] },
     { id:4, name : "Новости", path: "/news" , hasDroopDown: true , isDroopDown : false ,listDroopDown:[]},
     { id:5, name : "История", path: "/stories", hasDroopDown: true , isDroopDown : false ,listDroopDown:[]},
     { id:6, name : "Блог", path: "/blog", hasDroopDown: false , isDroopDown : false, listDroopDown:[]},

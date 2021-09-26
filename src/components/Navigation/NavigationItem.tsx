@@ -24,6 +24,8 @@ const NavigationItem:FunctionComponent<NavigationItemProps> = (
     const onClickHandler = useCallback(() => {
         onClick(item.id)
     },[item.id, onClick]);
+
+
     
     return (
          <nav className={styles.navigationItemContainer} onMouseEnter={onClickHandler}>
