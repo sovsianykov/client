@@ -1,15 +1,15 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Home from "../pages/Home/Home";
 import Layout from "./Layout/Layout";
 import {BrowserRouter as Router , Switch, Route} from "react-router-dom";
 import HeaderApp from "./Header/HeaderApp";
+import Login from "../pages/Login/Login";
 
 
 function App() {
-
+     const [isLogged, setIsLogged] = useState<boolean>(false)
   return (
     <div className="App">
-
             <Router>
                 <Layout>
                     <HeaderApp/>
@@ -24,7 +24,7 @@ function App() {
          </Switch>
                 </Layout>
         </Router>
-
+        <Login isLogged={isLogged}/>
     </div>
   );
 }
