@@ -5,9 +5,11 @@ import HeaderNav from "./HeaderNav";
 
 const HeaderApp:FunctionComponent = () => {
     return (
-        <header className={styles.headerContainer}>
-            <HeaderTools/>
-            <HeaderNav/>
+        <header className={styles.fixedTopContainer}>
+            <div className={styles.headerContainer}>
+                <HeaderTools/>
+                <HeaderNav/>
+            </div>
         </header>
     );
 };

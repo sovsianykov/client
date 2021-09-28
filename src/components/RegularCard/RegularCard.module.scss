@@ -1,0 +1,46 @@
+.cardContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 5px;
+  box-shadow: 0 0 3px #a19e9e;
+
+
+    .cardHeader {
+      display: flex;
+      width: 100%;
+      padding: 10px;
+      .description {
+        width: 60%;
+        margin-left: 40px;
+        padding: 10px;
+      }
+
+
+      .avatar {
+        width: 200px;
+        height: 300px;
+        margin-left: auto;
+        margin-right: 40px ;
+        overflow: hidden;
+        padding: 5px;
+        border: 1px solid #422801 ;
+
+        img {
+          width: 100%;
+          display: block;
+        }
+
+      }
+
+    }
+
+    .instrument {
+      font-size: 18px;
+      font-weight: 400;
+      letter-spacing: .1rem;
+    }
+
+
+  }

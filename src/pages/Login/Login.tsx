@@ -2,8 +2,7 @@ import React, {ChangeEvent, ChangeEventHandler, FormEvent, FunctionComponent, us
 import styles from './Login.module.scss';
 import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
-import postLogin from "../../api/postLogin";
-import {useFetch} from "../../api/api";
+import { useFetch } from "../../api/api";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -38,7 +37,14 @@ const Login:FunctionComponent<LoginProps> = ({isLogged}) => {
 
     }
 
-     useFetch("auth/registration",'POST',{"username":"oleg","password":"1234567"})
+  const {isLoading, response, error} =  useFetch("auth/registration",'POST',{"username":"olegj512","password":"12344457"})
+
+
+    if (isLoading) {
+        console.log(response, error)
+    }
+
+
 
     console.log(username,password)
     return (
